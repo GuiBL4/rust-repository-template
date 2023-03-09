@@ -1,6 +1,5 @@
 name: Task
 description: Submit new Task
-title: "[TASK]: "
 labels: ["task"]
 body:
   - type: textarea
@@ -28,9 +27,16 @@ body:
     id: task-risks
     attributes:
       label: Risks
-      description: Provive a list of risks that should be considered for this task.
+      description: Provide a list of risks that should be considered for this task.
     validations:
       required: true
+  - type: textarea
+    id: task-dependencies
+    attributes:
+      label: Dependencies
+      description: Indicate any dependencies that could block the execution of this task
+    validations:
+      required: false
   - type: textarea
     id: task-references
     attributes:
