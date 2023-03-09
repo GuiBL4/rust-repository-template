@@ -2,7 +2,8 @@
 
 members = [
   "crates/greeter_cli",
-  "crates/greeter_service"
+  "crates/greeter_service",
+  "crates/greeter_mock"
 ]
 
 # Global package attributes
